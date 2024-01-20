@@ -3,7 +3,7 @@ package com.driver.controllers;
 import com.driver.model.Admin;
 import com.driver.model.Customer;
 import com.driver.model.Driver;
-import com.driver.services.impl.adminServiceImpl;
+import com.driver.services.impl.AdminServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,6 +42,6 @@ public class AdminController {
 
 	@GetMapping("/listOfDrivers")
 	public List<Driver> listOfDrivers() {
-		return adminServiceImpl.listOfDrivers();
+		return adminServiceImpl.getlistOfDrivers();
 	}
 }
